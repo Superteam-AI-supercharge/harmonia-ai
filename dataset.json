@@ -1,0 +1,379 @@
+[{
+    "title": "FAQ",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/community/faqs",
+    "source": "Superteam Handbook",
+    "tags": [
+        "Contributions",
+        "Benefits",
+        "Instagrant",
+        "Community Engagement",
+        "Membership"
+    ],
+    "description": "FAQs | The Superteam Handbook How do I get involved in the community? I have an idea for a project, what should I do? What benefits do Members get relative to Contributors? Can I make changes to my submission after submitting it? Currently no, that's not possible on Earn.Do I need to post my submission on Twitter (for listings which are not Twitter thread bounties)? While it’s not mandatory, we recommend that participants tweet out their work so that: We can RT the best entries to give them more exposure, and It makes it easier for sponsors to discover the participant's submission. How do I become a Member? I have another question not answered here? Community \u2753Got questions? We have most of the answers. How do I get involved in the community? Get involved in Discord. Ask questions, share resources, and generally contribute to the conversation. If you build/write/see something interesting, share it in Discord! Get to know other people in the community. The easiest way is to see who is active on Discord or on our Reputation Board and shoot them a DM asking for a quick 15 minute intro meeting. We\u2019re a friendly bunch! I have an idea for a project, what should I do? Apply for an Instagrant! We\u2019d love to give you between $1,000 - $10,000 (smaller is easier!) to build out your concept. What benefits do Members get relative to Contributors? Members get access to project channels in Discord (for easier contribution), access to Working Groups, preferential treatment on Instagrants, and additional benefits of Superteam\u2019s distribution (e.g. sharing on social, ecosystem introductions, etc). How do I become a Member? Consistently help other Superteam Members and contribute to Superteam projects, earning XP. Win a Grant I have another question not answered here? Feel free to drop us a note at support@superteam.fun."
+},
+{
+    "title": "Superteam Earn",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/products/superteam-earn",
+    "source": "Superteam Handbook",
+    "tags": ["Crypto Projects", "Freelance Gigs", "Bounties", "Remote Work", "Talent Contribution"],
+    "description": "Building for the future of work, powered by crypto rails. Superteam Earn helps talent contribute to crypto projects through bounties and freelance gigs, in exchange for earning in crypto. For crypto founders, the value of Superteam Earn is two-fold: 1) ease of bounty / freelance project management, and 2) getting their work distributed to a crypto-native audience. For talent, Superteam Earn is perfect for finding their first crypto gig, building proof-of-work while getting a chance to earn in global standards, fully remotely."
+  },
+  {
+    "title": "Superteam Build",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/products/superteam-build",
+    "source": "Superteam Handbook",
+    "tags": ["Solana", "DeFi", "NFTs", "DAOs", "Payments", "Ideas Repository"],
+    "description": "Find inspiration for your next Solana project. An ideas repository for what to build on Solana, including RFPs across DeFi, NFTs, DAOs, Payments, and many more categories!"
+  },
+  {
+    "title": "Core Values",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/getting-started/core-values",
+    "source": "Superteam Handbook",
+    "tags": ["Community Values", "Decentralization", "Web3 Principles", "Remote Work"],
+    "description": "Superteam is built on core values that prioritize ownership economy, permissionless work, flexible hours, remote work, and fostering a community GDP as the guiding star. These principles enable the creation of a decentralized, collaborative, and merit-based ecosystem that embraces fluid leadership, multi-chain development, and innovation over consensus-driven stagnation."
+  },
+  {
+    "title": "Community Structure",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/community-structure",
+    "source": "Superteam Handbook",
+    "tags": ["Community Tiers", "Meritocracy", "Crypto Community"],
+    "description": "Superteam's community structure is merit-focused, comprising three tiers: Lurkers, Contributors, and Members. Participation is based on proven contributions, with each tier offering increasing levels of access, resources, and opportunities to engage with Web3 and the Solana ecosystem."
+  },
+  {
+    "title": "Essential Resources",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/essential-resources",
+    "source": "Superteam Handbook",
+    "tags": ["Web3 Learning", "Crypto Jobs", "Grants", "Solana Development"],
+    "description": "A curated collection of resources for anyone looking to start learning, earning, and building in Web3. Includes links to Superteam Earn, Superteam Build, grant applications, and educational materials to help contributors navigate the crypto ecosystem effectively."
+  },
+  {
+    "title": "How to Contribute",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/getting-involved/how-to-contribute",
+    "source": "Superteam Handbook",
+    "tags": ["Community Contribution", "Bounties", "Solana Ecosystem", "XP System"],
+    "description": "Superteam encourages contributions through bounties, grants, and direct support to community-driven projects. Members can gain XP by hosting events, writing crypto-focused content, or participating in mentorship programs. The reputation system rewards contributors for their efforts, creating a dynamic and collaborative environment."
+  },
+  {
+    "title": "The Reputation System",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/getting-involved/the-reputation-system",
+    "source": "Superteam Handbook",
+    "tags": ["Community Contribution", "Reputation System", "XP Allocation", "DAO"],
+    "description": "The Reputation System is a work-in-progress framework designed to capture Member contributions and allocate XP based on effort and impact. XP serves as a reflection of members' contributions, helping Project Leads identify reliable contributors. Key aspects include XP allocation formulas, multipliers, and sources, along with a leaderboard showcasing top contributors. Members can use their XP as credentials within the Web3 ecosystem."
+  },
+  {
+    "title": "Case Study: Superteam Earn",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/getting-involved/case-study-superteam-earn",
+    "source": "Superteam Handbook",
+    "tags": ["Case Study", "Earnings Opportunities", "XP System", "Flagship Projects"],
+    "description": "The Superteam Earn case study showcases the aggregation of earning opportunities within the Solana ecosystem. It highlights how XP is allocated for shipped projects based on effort, multiplier, and impact. Detailed breakdowns include total project hours, team contribution percentages, and XP distribution among contributors, offering transparency and insights into collaborative efforts."
+  },
+  {
+    "title": "Community GDP",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/getting-involved/community-gdp",
+    "source": "Superteam Handbook",
+    "tags": ["Community Contribution", "Earnings Opportunities", "Metrics", "Collaboration"],
+    "description": "Community GDP is the Superteam's North Star metric, capturing the total earning opportunities members create for one another through bounties, grants, jobs, and other initiatives. This metric emphasizes the value created within the community, celebrating contributors weekly and recognizing earners in dedicated channels to encourage further collaboration and financial empowerment."
+  },
+  {
+    "title": "Superteam Earn FAQ",
+    "region": "Global",
+    "source_url": "https://docs.superteam.fun/the-superteam-handbook/earn-faq",
+    "source": "Superteam Handbook",
+    "tags": [
+      "FAQ",
+      "Superteam Earn",
+      "Bounties",
+      "Projects",
+      "XP System",
+      "Rewards",
+      "Team Participation",
+      "Plagiarism Policy",
+      "Payments",
+      "Community Membership"
+    ],
+    "description": "The Superteam Earn FAQ provides answers to common questions about participating in Superteam Earn opportunities.\n\n**Types of Superteam Earn Listings**\n\n**Q:** What are Bounties and Projects?\n**A:** Bounties are competitive tasks where everyone participates, and the best submission(s) get rewarded, while Projects involve hiring a freelancer through a custom application form, with only the selected applicant completing the work.\n\n**Q:** How can I submit to a Bounty or apply to a Project?\n**A:** Sign up on earn.superteam.fun, verify your email, create a talent profile, and then select a listing to apply or submit.\n\n**Q:** Do participants receive an email confirming their application?\n**A:** Yes, participants will receive a confirmation email after submitting their application.\n\n**Q:** How is payment processed for winners?\n**A:** For Superteam/Solana-sponsored listings, winners receive payment within 7 days of submitting a form after completing KYC. For external sponsors, payment is sent to the wallet linked to the winner’s Superteam Earn account, with some sponsors requiring invoices or KYC.\n\n**Q:** When working in teams, who should submit the application?\n**A:** Ideally, only the team lead should submit the application to avoid redundancy and simplify payment processing.\n\n**Q:** Can I modify my submission after applying?\n**A:** No, changes cannot be made after submitting on Earn.\n\n**Q:** Do I need to post my submission on Twitter?\n**A:** It’s not mandatory, but we recommend tweeting your work for more exposure and easier discovery by sponsors.\n\n**Rewards/Payouts on Superteam Earn**\n\n**Q:** What are the perks of winning a bounty or project?\n**A:** Winners receive payment, and some listings offer additional perks like NFTs, merch, and an invitation to join Superteam as a Member/Contributor. Winners also earn XP, but only if they are invited to the community as a contributor/member.\n\n**Q:** How can I get the member/contributor role through Superteam Earn?\n**A:** Some listings offer an invitation to become a Member/Contributor. Exceptional submissions may also be awarded this status even if not explicitly stated in the listing.\n\n**Q:** Do all listings provide membership as a perk?\n**A:** No, not all listings offer membership; some only provide rewards like prizes or payment.\n\n**Q:** How are team rewards managed?\n**A:** The payment goes to the wallet of the team member (usually the lead) who made the submission. The team is free to divide the reward as they see fit.\n\n**Announcements & Notifications**\n\n**Q:** How are winners announced?\n**A:** Winners are notified and listed on the specific listings once announced.\n\n**Q:** How can I stay updated on new listings?\n**A:** Click on the Notify Me button on the category page to receive notifications when new listings are added.\n\n**XP Allocation**\n\n**Q:** How much XP can I earn for winning a bounty or project?\n**A:** XP allocation is as follows: 1st place receives 80 XP, 2nd place receives 60 XP, and 3rd place receives 50 XP. For teams, XP is evenly distributed among team members.\n\n**Policy**\n\n**Q:** What is the plagiarism policy?\n**A:** Submissions with over 15% plagiarism may be disqualified, and repeat offenders may be permanently banned from Earn. We recommend checking submissions for plagiarism before submitting.\n\n**Q:** Can deadlines be extended?\n**A:** Only the sponsor can extend the deadline. Participants do not need to take any action if the deadline is extended after submission.\n\n**Q:** If the prize includes membership, who gets the role?\n**A:** All teammates will receive the role if it’s part of the prize.\n\n**Evaluation**\n\n**Q:** How are winners decided?\n**A:** Sponsors review submissions and select winners, though sometimes Superteam’s brain-trust members may assist with evaluation.\n\n**Sponsor Referrals**\n\n**Q:** How can I refer a sponsor to Superteam?\n**A:** You can reach out to @pratikdholani on Telegram (https://t.me/pratikdholani) or Twitter(https://x.com/pratikdholani) to refer a sponsor.\n\n**Sponsors**\n\n**Q:** How are sponsors selected to list on Superteam Earn?\n**A:** Any Solana project can sponsor a listing on Superteam Earn. If assistance is needed in setting up, contact @pratikdholani on Telegram or Twitter.\n\n**Miscellaneous**\n\n**Q:** How can I report bugs or provide feedback?\n**A:** Reach out to hello@superteamearn.com for bug reports or feedback."
+  },
+  {
+    "title": "About Superteam Vietnam",
+    "region": "Vietnam",
+    "source_url": "https://vn.superteam.fun/",
+    "source": "Superteam Vietnam",
+    "tags": ["Community Development", "Web3 Ecosystem", "Solana", "Talent Development"],
+    "description": "Superteam Vietnam is the branch of the Superteam community development initiative in Vietnam. Its core members include individuals with expertise in software development and construction, such as programmers, designers, operators, and marketers."
+  },
+  {
+    "title": "Superteam Vietnam Missions",
+    "region": "Vietnam",
+    "source_url": "https://vn.superteam.fun/",
+    "source": "Superteam Vietnam",
+    "tags": ["Solana", "Talent Development", "Web3 Ecosystem"],
+    "description": "Superteam Vietnam has two main missions: helping products (and founders) build on Solana succeed, and training and consulting to attract more talent into the Web3 ecosystem."
+  },
+  {
+    "title": "Superteam Vietnam & DePHY: Decentralizing IoT in Hanoi",
+    "region": "Vietnam",
+    "source_url": "https://lu.ma/gceskc8i",
+    "source": "Superteam Vietnam",
+    "tags": ["IoT", "Decentralization", "Networking", "Web3"],
+    "description": "Join Superteam Vietnam and DePHY’s CEO on February 7 in Hanoi for an exclusive dinner focused on empowering IoT builders to decentralize and reward their businesses through DePIN mechanisms. Perfect for developers and entrepreneurs in the IoT space, this event includes inspiring discussions, success stories, networking opportunities, and actionable insights."
+  },
+  {
+    "title": "Jito TheGrid: Final Battle",
+    "region": "Virtual",
+    "source_url": "https://www.jito.network/grid/",
+    "source": "Superteam Vietnam",
+    "tags": ["Hackathon", "Web3", "Solana", "Technology"],
+    "description": "See the brightest minds in Web3 solve the hottest problems in the Solana ecosystem with Jito tech. The final battle of Jito TheGrid Hackathon takes place virtually on February 12."
+  },
+  {
+    "title": "Join Superteam Vietnam",
+    "region": "Vietnam",
+    "source_url": "",
+    "source": "Superteam Vietnam",
+    "tags": ["Community", "Learning Opportunities", "Blockchain", "Web3"],
+    "description": "Superteam Vietnam offers a step-by-step pathway for individuals to build products on Solana, connect with a vibrant community, and earn through grants and bounties in the blockchain and Web3 ecosystem."
+  },
+  {
+    "title": "Step 1: Build Products on Solana",
+    "region": "Vietnam",
+    "source_url": "https://buildspace.so/p/solana-core",
+    "source": "Superteam Vietnam",
+    "tags": ["Solana", "Programming Course", "Web3 Development"],
+    "description": "Join the free 6-week Solana programming course to gain practical knowledge from leading developers in the Solana ecosystem. Learn the skills needed to build innovative products on Solana."
+  },
+  {
+    "title": "Step 2: Join the Superteam Vietnam Community",
+    "region": "Vietnam",
+    "source_url": "https://discord.com/invite/NHFqtgeTgy",
+    "source": "Superteam Vietnam",
+    "tags": ["Community", "Networking", "Blockchain"],
+    "description": "Meet and connect with active Superteam members in Vietnam through Discord and real-life events. Engage with like-minded individuals passionate about blockchain and Web3."
+  },
+  {
+    "title": "Step 3: Earn Money with Grants & Bounties",
+    "region": "Vietnam",
+    "source_url": "https://earn.superteam.fun/regions/vietnam/?utm_source=superteam&utm_medium=notion&utm_campaign=website",
+    "source": "Superteam Vietnam",
+    "tags": ["Grants", "Bounties", "Web3 Income", "Blockchain"],
+    "description": "Submit ecosystem development ideas (grants) or participate in bounties to earn income from Web3-related projects. Explore opportunities to monetize your skills in blockchain."
+  },
+  {
+    "title": "Study with Superteam Vietnam",
+    "region": "Vietnam",
+    "source_url": "https://superteamvn.notion.site/Solana-dApp-Sprint-c1da2ce05f774752831612817051a0e1?pvs=4",
+    "source": "Superteam Vietnam",
+    "tags": ["Learning", "Blockchain", "Courses", "Web3"],
+    "description": "Superteam Vietnam provides courses and learning materials to help members enhance their knowledge and skills in the blockchain field. Join now to deepen your understanding of blockchain and Web3."
+  },
+  {
+    "title": "Earn Money with Superteam Vietnam",
+    "region": "Vietnam",
+    "source_url": "https://earn.superteam.fun/regions/vietnam/",
+    "source": "Superteam Vietnam",
+    "tags": ["Earning Opportunities", "Web3 Projects", "Blockchain Income"],
+    "description": "Explore various earning opportunities through blockchain and Web3 projects. Leverage your skills and earn extra income from innovative activities and collaborations."
+  },
+  {
+    "title": "Superteam Vietnam Community",
+    "region": "Vietnam",
+    "source_url": "https://discord.com/invite/v9CwqjnHju",
+    "source": "Superteam Vietnam",
+    "tags": ["Community", "Collaboration", "Web3 Networking"],
+    "description": "Superteam Vietnam creates a connecting environment for blockchain and Web3 enthusiasts. Exchange ideas, learn from others, and collaborate on shared projects in a vibrant community."
+  },
+  {
+    "title": "Follow Superteam Vietnam on Twitter",
+    "region": "Vietnam",
+    "source_url": "https://twitter.com/SuperteamVN",
+    "source": "Superteam Vietnam",
+    "tags": ["Social Media", "Updates", "Community Engagement"],
+    "description": "Stay updated with the latest news, events, and opportunities by following Superteam Vietnam on Twitter."
+  },
+  {
+    "title": "Follow Superteam Vietnam Blog",
+    "region": "Vietnam",
+    "source_url": "https://superteamvn.substack.com/",
+    "source": "Superteam Vietnam",
+    "tags": ["Blog", "Blockchain Insights", "Web3 Content"],
+    "description": "Read detailed articles and insights about blockchain, Web3, and the community on the Superteam Vietnam blog."
+  },
+  {
+    "title": "Check here for job opportunities",
+    "region": "Vietnam",
+    "source_url": "https://docs.google.com/spreadsheets/d/1QDZhKzeG69Jg4JgYzbVyr22yg-mQnqbP_hjG1-L6fVk/edit?not_in_iframe=true&gid=0#gid=0",
+    "source": "Superteam Vietnam",
+    "tags": ["Blockchain Developer", "Jobs", "Web3"],
+    "description": "Check the spreasheet for job opportunites in vietnam."
+  },
+  {
+    "title": "Organize with Superteam Vietnam PizzaFund",
+    "region": "Vietnam",
+    "source_url": "https://superteamvn.notion.site/Superteam-Pizza-Fund-2810701044894b1e9257d223f445e4bc",
+    "source": "Superteam Vietnam",
+    "tags": ["Community Organization", "Support", "Web3 Events"],
+    "description": "If you’re interested in organizing an event or initiative, apply to the Superteam PizzaFund for support. Follow the instructions to kickstart your idea."
+  } ,
+  {
+    "title": "Join Superteam Nigeria",
+    "region": "Nigeria",
+    "source_url": "https://discord.gg/C6EgkeEAed",
+    "source": "Superteam Nigeria",
+    "tags": ["Community", "Blockchain", "Web3", "Solana"],
+    "description": "Superteam Nigeria is building the Solana ecosystem in Africa through innovative projects and community-driven initiatives. Join a network of builders, developers, designers, and writers working on exciting Web3 solutions."
+  },
+  {
+    "title": "Superteam Nigeria Overview",
+    "region": "Nigeria",
+    "source_url": "https://ng.superteam.fun/",
+    "source": "Superteam Nigeria",
+    "tags": ["Community Growth", "Hackathons", "Collaboration"],
+    "description": "Founded in June 2023 by Nzube Ezudo and Harrison Obiefule, Superteam Nigeria has grown to a 12-member core team. Over 60 projects have been built and submitted to global hackathons, with winners in Renaissance, Hyperdrive, and cHack."
+  },
+  {
+    "title": "Superteam Nigeria Community Statistics",
+    "region": "Nigeria",
+    "source_url": "https://ng.superteam.fun/",
+    "source": "Superteam Nigeria",
+    "tags": ["Metrics", "Impact", "Blockchain"],
+    "description": "Superteam Nigeria has built over 60 projects, contributing to a Community GDP of $160,283+, with 2800+ active members."
+  },
+  {
+    "title": "Superteam Nigeria Guilds",
+    "region": "Nigeria",
+    "source_url": "https://ng.superteam.fun/events",
+    "source": "Superteam Nigeria",
+    "tags": ["Developers", "Designers", "Writers", "Collaboration"],
+    "description": "Superteam Nigeria consists of three core guilds—Developers, Designers, and Writers. These guilds offer opportunities for learning, networking, and collaboration within the Web3 ecosystem."
+  },
+  {
+    "title": "Superteam Nigeria Monthly Ecosystem Calls",
+    "region": "Nigeria",
+    "source_url": "https://ng.superteam.fun/events",
+    "source": "Superteam Nigeria",
+    "tags": ["Networking", "Ecosystem Growth", "Community Engagement"],
+    "description": "Superteam Nigeria hosts monthly ecosystem calls across 21 states in Nigeria, fostering engagement and collaboration among blockchain enthusiasts."
+  },
+  {
+    "title": "Superteam Nigeria Leadership",
+    "region": "Nigeria",
+    "source_url": "",
+    "source": "Superteam Nigeria",
+    "tags": ["Leadership", "Community Building", "Web3"],
+    "description": "Country Leads: Nzube Ezudo (@NzubeEzudo on X/twitter), Harri Obi (@Harri_obi on X/twitter), and Alex Favour (@Alexspoof on X/twitter) lead Superteam Nigeria, guiding the community towards growth and innovation."
+  },
+  {
+    "title": "Superteam Nigeria Monthly Newsletter",
+    "region": "Nigeria",
+    "source_url": "https://superteamnigeria.substack.com/subscribe",
+    "source": "Superteam Nigeria",
+    "tags": ["News", "Updates", "Exclusive Content"],
+    "description": "Subscribe to the Superteam Nigeria newsletter for the latest releases, Web3 insights, exclusive events, and community updates—no spam, just valuable content."
+  },
+  {
+    "title": "Superteam Nigeria Community Call",
+    "region": "Nigeria",
+    "source_url": "https://ng.superteam.fun/events",
+    "source": "Superteam Nigeria",
+    "tags": ["Networking", "Community Engagement", "Web3"],
+    "description": "Join the weekly Superteam Nigeria Community Call every Thursday at 06:00 PM to connect with members, discuss updates, and explore new opportunities."
+  },
+  {
+    "title": "Superteam Nigeria Developers Guild Call",
+    "region": "Nigeria",
+    "source_url": "https://ng.superteam.fun/events",
+    "source": "Superteam Nigeria",
+    "tags": ["Developers", "Web3", "Collaboration"],
+    "description": "Join the Developers Guild Call every Friday at 07:00 PM to collaborate with fellow Web3 developers and build innovative projects."
+  },
+  {
+    "title": "Superteam Nigeria Designers Guild Call",
+    "region": "Nigeria",
+    "source_url": "https://ng.superteam.fun/events",
+    "source": "Superteam Nigeria",
+    "tags": ["Design", "Web3", "UI/UX"],
+    "description": "Join the Designers Guild Call every Tuesday at 07:00 PM to connect with designers working on Web3 projects, UI/UX, and blockchain visuals."
+  },
+  {
+    "title": "Superteam Nigeria Content Creators Guild Call",
+    "region": "Nigeria",
+    "source_url": "https://ng.superteam.fun/events",
+    "source": "Superteam Nigeria",
+    "tags": ["Content Creation", "Marketing", "Blockchain"],
+    "description": "Join the Content Creators Guild Call every Friday at 07:00 PM to discuss blockchain content strategies, marketing, and Web3 storytelling."
+  },
+  {
+    "title": "Superteam Nigeria Writers Guild Call",
+    "region": "Nigeria",
+    "source_url": "https://ng.superteam.fun/events",
+    "source": "Superteam Nigeria",
+    "tags": ["Writers", "Content Strategy", "Web3"],
+    "description": "Join the Writers Guild Call every Tuesday at 09:00 PM to collaborate on writing projects, research, and blockchain content strategies."
+  },
+  {
+    "title": "Earn with Superteam Nigeria",
+    "region": "Nigeria",
+    "source_url": "",
+    "source": "Superteam Nigeria",
+    "tags": ["Earnings", "Bounties", "Hackathons", "Grants"],
+    "description": "Discover multiple opportunities to earn within the Superteam Nigeria community. Engage in bounties, participate in hackathons, and apply for Instagrants to showcase your skills and gain financial rewards."
+  },
+  {
+    "title": "Superteam Nigeria Bounties",
+    "region": "Nigeria",
+    "source_url": "https://earn.superteam.fun/bounties/",
+    "source": "Superteam Nigeria",
+    "tags": ["Bounties", "Skill Development", "Recruitment"],
+    "description": "Bounties provide opportunities to showcase your skills and attract potential recruiters. Over 60 projects have been built and submitted to hackathons, with winners in Hyperdrive and cHack."
+  },
+  {
+    "title": "Superteam Nigeria Hackathons",
+    "region": "Nigeria",
+    "source_url": "https://blog.colosseum.org/announcing-the-winners-of-the-solana-radar-hackathon/",
+    "source": "Superteam Nigeria",
+    "tags": ["Hackathons", "Innovation", "Web3"],
+    "description": "Solana Hackathons highlight the incredible potential of decentralized technologies. Participate and explore innovations in DeFi, gaming, RWAs, and DAOs solving real-world challenges."
+  },
+  {
+    "title": "Superteam Nigeria Instagrants",
+    "region": "Nigeria",
+    "source_url": "https://earn.superteam.fun/grants/solana-foundation-nigeria-grants/",
+    "source": "Superteam Nigeria",
+    "tags": ["Grants", "Funding", "Solana"],
+    "description": "Superteam Nigeria supports Solana Foundation Grants, funding projects promoting decentralization. Grants range from $1 - $10,000 for dApps, technical contributions, content, and community initiatives."
+  },
+  {
+    "title": "Superteam Build",
+    "region": "Nigeria",
+    "source_url": "https://build.superteam.fun/",
+    "source": "Superteam Nigeria",
+    "tags": ["Project Ideas", "Hackathon Support", "Web3 Innovation"],
+    "description": "Superteam Build is your go-to source for Web3 project inspiration, featuring over 200 curated ideas for hackathon projects, startups, and decentralized applications."
+  },
+  {
+    "title": "Follow Superteam Nigeria on X/Twitter",
+    "region": "Nigeria",
+    "source_url": "https://x.com/SuperteamNG",
+    "source": "Superteam Nigeria",
+    "tags": ["Community Updates", "Web3 News", "Networking"],
+    "description": "Stay updated with Superteam Nigeria’s latest news, opportunities, and Web3 insights by following us on X/Twitter."
+  },
+  {
+    "title": "Join Superteam Nigeria Discord",
+    "region": "Nigeria",
+    "source_url": "https://discord.gg/C6EgkeEAed",
+    "source": "Superteam Nigeria",
+    "tags": ["Community Engagement", "Networking", "Web3 Collaboration"],
+    "description": "Connect with the vibrant Superteam Nigeria community on Discord to engage with like-minded individuals, collaborate on projects, and explore Web3 opportunities."
+  }
+]  
+

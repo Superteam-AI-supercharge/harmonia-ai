@@ -1,0 +1,771 @@
+- Name: DeTask
+- Description: AI-enabled product development platform on Solana
+- GitHub / Devpost Link: https://github.com/zaphod0x/colosseum-frontend
+- Demo / Pitch: https://drive.google.com/file/d/1lAs2U9il7rWv9I_VGvDEwWSUY6SEkrFW/view?usp=sharing, https://twitter.com/detask_ai
+- Website: https://www.detask.ai/
+- Hackathon: Renaissance (2024)
+- Award: First - DAOs Track
+- Twitter/X: https://twitter.com/detask_ai
+
+- Name: FluxBot
+- Description: Telegram bot enabling fast access & onboarding into the Solana ecosystem backed with ML capabilities for ease of use
+- Demo / Pitch: https://www.canva.com/design/DAFxJLSnCUs/z-6C3fduWXfsQOAFh91X6w/view
+- Website: https://t.me/fluxbeam_bot
+- Hackathon: Hyperdrive (2023)
+- Award: Grand Prize Winner
+- Twitter/X: https://twitter.com/FluxBeamDEX
+
+- Name: Wysdom
+- Description: Collaborative platform for web3 development and publishing offering an all-in-one space for smart contract development, dApp prototyping, transaction analysis, on-chain exploration, and knowledge sharing
+- GitHub / Devpost Link: https://github.com/Wysdom-xyz/wysdom
+- Demo / Pitch: https://www.canva.com/design/DAFxXhV2PPo/ukjSs1qNaFXHjqx5BQ7GfQ/view#1
+- Website: https://wysdom.xyz/
+- Hackathon: Hyperdrive (2023)
+- Award: First - AI Track
+- Twitter/X: https://x.com/wysdomxyz?s=21&t=iU87qi-ZGejiEwJdYNVnsA
+
+- Name: Aperture
+- Description: AI-powered transaction explainer API
+- GitHub / Devpost Link: https://github.com/ApertureAI/aperture-monorepo
+- Demo / Pitch: https://youtu.be/C5GO9tR-z4c
+- Website: https://drive.google.com/file/d/1UEECS4wju_K3h-DdfpOF7-6doZd7eie_/view?usp=sharing
+- Hackathon: Hyperdrive (2023)
+- Award: Second - AI Track
+- Twitter/X: https://twitter.com/ApertureAI_
+
+- Name: Friday
+- Description: Platform for claiming exclusive access to creators, athletes, and entertainers through personal data sharing, enabling NFT earnings and community engagement
+- GitHub / Devpost Link: https://github.com/myfridayio/demo
+- Demo / Pitch: https://docsend.com/view/92ugwei4cngjdsyg
+- Website: https://testflight.apple.com/join/HFnLbCeN
+- Hackathon: Hyperdrive (2023)
+- Award: Fourth - AI Track
+- Twitter/X: https://twitter.com/OwnFriday
+
+- Name: Guardian AI - Your DAO or Multisig Protector
+- Description: Autonomous agent network for securing DAO/multisig transactions via rule-based checks
+- GitHub / Devpost Link: https://github.com/RTISCOOL/Guaridan-AI-Hyperdrive
+- Demo / Pitch: https://drive.google.com/drive/folders/1c5-RyluAUfFuIRgSw2KsVG11FC0O8dq1?usp=share_link
+- Hackathon: Hyperdrive (2023)
+- Award: Fifth - AI Track
+- Twitter/X: https://twitter.com/ryan_trat
+
+- Name: Dain
+- Description: Decentralized AI network infrastructure with collaborative nodes for information delivery
+- GitHub / Devpost Link: https://github.com/buildontal/DAIN-v1
+- Demo / Pitch: https://youtu.be/TKAPQwj25Y0
+- Website: https://dain.org/
+- Hackathon: Hyperdrive (2023)
+- Award: Second - DePIN Track
+- Twitter/X: https://twitter.com/buildonTAL
+
+- Name: Pregrame
+- Description: Trustless peer-to-peer betting platform
+- GitHub / Devpost Link: https://github.com/steelthedev/pregame
+- Demo / Pitch: https://www.tella.tv/video/trustless-peer-to-peer-betting-c2fs
+- Website: https://pre.game/
+- Hackathon: Radar (2024)
+- Award: First - Consumer Track
+- Twitter/X: https://x.com/pregame_hq
+- Latest Update: Accepted into the Colosseum Accelerator (November 2024)
+
+- Name: Fanplay
+- Description: Social prediction markets, live hamster racing, social wagering, and mini-games platform
+- GitHub / Devpost Link: https://github.com/Periondao/sol-fanplay, https://github.com/Periondao/solana-web-test
+- Demo / Pitch: https://www.loom.com/share/76efba52a26b4749b00c82cdcbf5fc7f
+- Website: https://www.fanplay.gg/
+- Hackathon: Radar (2024)
+- Award: Fourth - Consumer Track
+- Twitter/X: https://twitter.com/fanplaygg
+
+- Name: Supersize
+- Description: Real-time, fully on-chain high-stakes multiplayer game powered by Magicblock
+- GitHub / Devpost Link: https://github.com/Lewarn00/supersize-solana
+- Demo / Pitch: https://www.loom.com/share/77bc9e14cc784907b1b10497798e3ec4?sid=d3016676-fdfe-47d2-b832-611c9c130ea1
+- Website: https://supersize.gg/
+- Hackathon: Radar (2024)
+- Award: First - Gaming Track
+- Twitter/X: https://x.com/supersizegg
+- Latest Update: Accepted into the Colosseum Accelerator (November 2024)
+
+- Name: The Arena
+- Description: PvP social trading game to become the best trader
+- GitHub / Devpost Link: https://github.com/The-Arena-Fun/arena-ts
+- Demo / Pitch: https://thearena.fun/pdfs/the_arena_radar_hackathon.pdf
+- Hackathon: Radar (2024)
+- Award: Second - Gaming Track
+- Twitter/X: https://www.x.com/TheArenaDotFun
+- Latest Update: Accepted into the Colosseum Accelerator (November 2024)
+
+- Name: Windfall
+- Description: Gaming-based Liquid Staking Token (LST) project
+- GitHub / Devpost Link: https://github.com/Windfall-dev/portal
+- Demo / Pitch: https://docs.google.com/presentation/d/1YobqZl1m_tI4eSbd0yMnp_rs8IeWCzorbonC3lhIQE0/edit?usp=sharing
+- Website: https://windfall-prototype.vercel.app/
+- Hackathon: Radar (2024)
+- Award: Third - Gaming Track
+- Twitter/X: https://x.com/windfall_verse
+
+- Name: Barnfight
+- Description: White-label gaming solution for creating custom games with token incentives
+- GitHub / Devpost Link: https://github.com/MemeTank
+- Demo / Pitch: https://drive.google.com/file/d/1tiF2iXEdHZVt5YTeXuqAfb4E5cB3h6Rj/view?usp=sharing
+- Website: https://barnfight.io/
+- Hackathon: Radar (2024)
+- Award: Fourth - Gaming Track
+- Twitter/X: https://x.com/barnfight_
+
+- Name: Quantro
+- Description: ETF-building platform with virtual dollars for PvP-style returns
+- GitHub / Devpost Link: https://github.com/orgs/Quantro-App/repositories
+- Demo / Pitch: https://docsend.com/view/z2qr6hzn85r3khj9
+- Website: https://app.quantro.xyz/
+- Hackathon: Radar (2024)
+- Award: Fifth - Gaming Track
+- Twitter/X: https://x.com/QuantroXYZ
+
+- Name: AlphaFC
+- Description: Football fan engagement platform with Club Shares (tokens) for decision-making power
+- GitHub/Devpost: https://github.com/AlphaFC-XYZ/AFC-Platform
+- Demo/Pitch: https://drive.google.com/file/d/12QhaYRtqevncd32qX0dNo1bYH1GO7_4o/view?usp=sharing
+- Website: https://alphafc.xyz/
+- Hackathon: Radar (2024)
+- Award: First - DAOs Track
+- Twitter/X: https://x.com/alphafcxyz
+- Latest Update: Accepted into the Colosseum Accelerator (November 2024)
+
+- Name: AFC-Platform
+- Description: Football fan engagement platform with Club Shares (tokens) for decision-making power
+- GitHub / Devpost Link: https://github.com/AlphaFC-XYZ/AFC-Platform
+- Demo / Pitch: https://drive.google.com/file/d/12QhaYRtqevncd32qX0dNo1bYH1GO7_4o/view?usp=sharing
+- Website: https://alphafc.xyz/
+- Hackathon: Radar (2024)
+- Award: First - DAOs Track
+- Twitter/X: https://x.com/alphafcxyz
+- Latest Update: Accepted into the Colosseum Accelerator (November 2024)
+
+- Name: MeshMap + City Champ
+- Description: 3D map of the world via community-submitted scans with token incentives
+- GitHub / Devpost Link: https://github.com/SpectraStudios/CityChamp/
+- Demo / Pitch: https://drive.google.com/file/d/1cIlYGWSfhrwRa6EmvoDtn8BwS7PgWI6o/view?usp=sharing
+- Website: https://meshmap.com/
+- Hackathon: Renaissance (2024)
+- Award: First - Gaming Track
+- Twitter/X: https://twitter.com/CityChampXYZ
+- Latest Update: Accepted into the Colosseum Accelerator (May 2024)
+
+- Name: Legends of the Sun
+- Description: Combat battle arena with web3 integrations for assets, marketplace, and on-chain wagers
+- GitHub / Devpost Link: https://github.com/Spaceman-Collective/lots-server-2/tree/main/packages/colyseus
+- Demo / Pitch: https://www.loom.com/share/3242598c2b0d4372bc331256a6896fd0?sid=ba433d8a-4ad5-4957-b4b7-8c88b3c83935
+- Website: https://legendsofthesun.com/
+- Hackathon: Renaissance (2024)
+- Award: Second - Gaming Track
+- Twitter/X: https://twitter.com/legendsofthesun
+
+- Name: Mining Badger Game
+- Description: On-chain crafting game using Honeycomb Protocol for developer integration
+- GitHub / Devpost Link: https://github.com/Honeycomb-Protocol/Mining_Badger
+- Demo / Pitch: https://www.youtube.com/watch?v=wFPxw-BPak0
+- Website: https://docs.honeycombprotocol.com/
+- Hackathon: Renaissance (2024)
+- Award: Third - Gaming Track
+- Twitter/X: https://twitter.com/honeycomb_prtcl
+
+- Name: Moon Boi Universe
+- Description: Web3 cyber-fantasy open-world RPG optimized for mobile
+- GitHub / Devpost Link: https://github.com/MOON-BOI-STUDIOS/MBU-SOLANA
+- Demo / Pitch: https://docs.google.com/presentation/d/1jUMhii3FgD5E1_Q7FeOc1VUJ4zlg_t4q/edit?usp=sharing&ouid=117111176110975186669&rtpof=true&sd=true
+- Website: https://moonboiuniverse.com/
+- Hackathon: Renaissance (2024)
+- Award: Fourth - Gaming Track
+- Twitter/X: https://x.com/MoonBoiUniverse
+
+- Name: Maneko Pet
+- Description: Tamagotchi-style mobile game with third-party game launcher integration
+- GitHub / Devpost Link: https://gitlab.com/manekogame
+- Demo / Pitch: https://www.loom.com/share/09d8cdbba64d431abc3fa7269227e586?sid=c25df271-cbae-4a97-a872-53ec8a651512
+- Website: https://play.manekopet.xyz/
+- Hackathon: Renaissance (2024)
+- Award: Fifth - Gaming Track
+- Twitter/X: https://x.com/manekosol
+
+- Name: Kizzy
+- Description: Content prediction marketplace app (e.g., predicting Elon Musk’s X post views)
+- GitHub / Devpost Link: https://github.com/ll336/kizzy
+- Demo / Pitch: https://www.loom.com/share/c231bb91968a47898a5aa441cdfe2624?sid=25a6a9e4-dd34-41f9-ab4f-2ec30055152f
+- Website: https://www.kizzy.io/
+- Hackathon: Hyperdrive (2023)
+- Award: Second - Consumer Track
+- Twitter/X: https://twitter.com/kizzymobile
+
+- Name: Byte In
+- Description: Mobile city-building game combining AI image recognition and play-to-earn models for healthier eating habits
+- GitHub / Devpost Link: https://github.com/byteinmy/solana_submission
+- Demo / Pitch: https://youtu.be/X327LtltPF0
+- Hackathon: Hyperdrive (2023)
+- Award: Third - AI Track
+- Twitter/X: https://twitter.com/Byte_In_
+
+- Name: Solciv
+- Description: Fully on-chain strategy game inspired by Civilization with a permissionless mod marketplace
+- GitHub / Devpost Link: https://github.com/proxycapital/solana-civ
+- Demo / Pitch: https://www.loom.com/share/bc43939dcbf14ac3b4e1eaf51fab5eab
+- Website: https://solciv.com/
+- Hackathon: Hyperdrive (2023)
+- Award: First - Gaming Track
+- Twitter/X: https://twitter.com/solanaciv
+
+
+- Name: Football Club Owners
+- Description: Strategic IDLE game for owning football clubs and competing in tournaments
+- GitHub / Devpost Link: https://github.com/sports-club-owner/fco
+- Demo / Pitch: https://docs.google.com/presentation/d/1cND0eP_Pb6u-vlD1LqT9yiOWcn0-_jPVwcGQOmTPabI/edit?usp=sharing
+- Website: https://fco.magicdima.xyz/
+- Hackathon: Hyperdrive (2023)
+- Award: Fifth - Gaming Track
+- Twitter/X: https://x.com/fcowners
+
+- Name: Sync Studios
+- Description: Mobile gaming solution converting web2 player accounts into tradeable assets
+- GitHub / Devpost Link: https://github.com/ymc182/hyperdrive-repo
+- Demo / Pitch: https://docs.google.com/presentation/d/1nGRIPEUTpERnzE5WNn95bWHq73vU1VmCBo0sCPD525I/edit?usp=sharing
+- Website: https://sync.studio/
+- Hackathon: Hyperdrive (2023)
+- Award: Second - Gaming Track
+- Twitter/X: https://twitter.com/SyncStudio_
+
+- Name: Geoverse
+- Description: Fully onchain RPG for resource management and exploration on Solana
+- GitHub / Devpost Link: https://github.com/turnyay/geoversegame
+- Demo / Pitch: https://drive.google.com/file/d/1IQs_M6NI-49LFq5RQZ7BACCE8yeI-JoP/view
+- Hackathon: Hyperdrive (2023)
+- Award: Fourth - Gaming Track
+- Twitter/X: https://twitter.com/geoversegame
+
+- Name: Hyperdrive Havoc
+- Description: Rogue-like bullet-hell game with cNFT collectibles
+- GitHub / Devpost Link: https://github.com/meditatingsloth/hyperdrive-unity
+- Demo / Pitch: https://cdn.hyperhavoc.com/pitch.mp4
+- Hackathon: Hyperdrive (2023)
+- Award: Third - Gaming Track
+- Twitter/X: https://twitter.com/hyperdrivehavoc
+
+- Name: Luxhaus
+- Description: Competition platform for winning real-world luxury assets via affordable tickets
+- GitHub / Devpost Link: https://github.com/Adamch85/luxhaus
+- Demo / Pitch: https://youtu.be/vhLBAZmvrJ4
+- Website: https://luxhaus.space/
+- Hackathon: Hyperdrive (2023)
+- Award: Second - Payments Track
+- Twitter/X: https://twitter.com/LUXHAUSOnline
+
+- Name: Shaga: The Uber of Cloud Gaming
+- Description: Platform for lending gaming PC access and monetizing hardware
+- GitHub / Devpost Link: https://github.com/ShagaDAO/Shaga-Monorepo
+- Demo / Pitch: https://drive.google.com/file/d/1Z57pcNtSFPt2EOf_pT8D_SND9Uswp6Zk/view?usp=drive_link
+- Website: https://linktr.ee/web3shaga
+- Hackathon: Hyperdrive (2023)
+- Award: First - DePIN Track
+- Twitter/X: https://twitter.com/web3shaga
+
+- Name: Space Fight
+- Description: Multiplayer spaceship arena game with NFT ships and SOL-based rewards
+- GitHub / Devpost Link: https://github.com/handelmanjosh/space-fight
+- Demo / Pitch: https://www.youtube.com/watch?v=IkjuMQ3j3vs
+- Hackathon: Hyperdrive (2023)
+- Award: University Award
+
+- Name: Alchemy: Battle for Ankhos
+- Description: AI-powered Discord RPG with NFT ownership of in-game assets
+- Website: https://discord.com/invite/playalchemy
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Grand Prize Winner
+- Twitter/X: https://twitter.com/play_alchemy
+
+- Name: Hellbenders Motorcycle Club
+- Description: Web3-native, fully on-chain animated MMMG
+- Website: https://www.hellbenders.world/
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Runner-Up
+- Twitter/X: https://twitter.com/HellbendersMC
+
+- Name: Michi
+- Description: Casual roguelike dungeon crawler powering a game ecosystem
+- GitHub / Devpost Link: https://github.com/sporicle/michi
+- Demo / Pitch: https://www.youtube.com/watch?v=yoB3shfYsoY
+- Hackathon: Grizzlython (2023)
+- Award: First - Gaming Track
+- Twitter/X: https://twitter.com/MichiByFaux
+
+- Name: Kyogen Clash
+- Description: On-chain RTS game built with Dominari Game Engine
+- GitHub / Devpost Link: https://github.com/Spaceman-Collective/dominari-kyogen
+- Demo / Pitch: https://www.youtube.com/watch?v=u8wCURpo_uU
+- Website: https://www.kyogenclash.com/
+- Hackathon: Grizzlython (2023)
+- Award: Second - Gaming Track
+- Twitter/X: https://twitter.com/KyogenClash
+
+- Name: RPS
+- Description: Wagered on-chain rock-paper-scissors game with friends or random opponents
+- GitHub / Devpost Link: https://github.com/solanaGames
+- Demo / Pitch: https://www.youtube.com/watch?v=bDwsJXFZfaA
+- Website: https://solgames-rps.pages.dev/
+- Hackathon: Grizzlython (2023)
+- Award: Third - Gaming Track
+- Twitter/X: https://twitter.com/rockGameStudios
+
+- Name: Sporting Labs
+- Description: On-chain F1 Fantasy League on xNFT Backpack with Boots
+- GitHub / Devpost Link: https://github.com/orgs/sportinglabs/repositories
+- Demo / Pitch: https://www.youtube.com/watch?v=u9kScg-CDKI
+- Website: https://www.sporting.gg/
+- Hackathon: Grizzlython (2023)
+- Award: Fourth - Gaming Track
+- Twitter/X: https://twitter.com/sportinglabs
+
+- Name: 3ntertain
+- Description: Event-oriented solution for entertaining and monetizing communities while rewarding game developers
+- GitHub / Devpost Link: https://github.com/3ntertain
+- Demo / Pitch: https://docs.google.com/presentation/d/e/2PACX-1vRl2g_CXFqv_qcEeKjqDwQbqwfqLFa58orvTah9eskIRwr_t0JS5u8xXymX0ZhIePmrs9HqWWTTSgWt/pub?start=false&loop=false&delayms=60000&slide=id.g1b69ac12acd_0_0
+- Website: https://3ntertain.io/
+- Hackathon: Grizzlython (2023)
+- Award: Fifth - Gaming Track
+- Twitter/X: https://twitter.com/3ntertain_io
+
+- Name: Aimdrop
+- Description: On-chain wallet analysis solution for web3 marketing with Semi-Fungible Tokens (SFTs)
+- GitHub / Devpost Link: https://github.com/KIMCAT33/Aimdrop
+- Demo / Pitch: https://www.dropbox.com/s/1m10v8ovrqks5hi/Aimdrop_demo.mp4?dl=0
+- Website: https://aimdrop.vercel.app/
+- Hackathon: Summer Camp (2022)
+- Award: Fifth - Gaming Track
+
+- Name: RPG Quest
+- Description: Lightweight pixel-based, multi-character Play-to-Earn dungeon game on Solana
+- GitHub / Devpost Link: https://github.com/lopeselio/SolanaSummerCap_SolanaRPGQuest
+- Demo / Pitch: https://www.youtube.com/watch?v=AQeXWPqfBpE
+- Hackathon: Summer Camp (2022)
+- Award: First - Gaming Track
+
+- Name: Strangemood
+- Description: Decentralized protocol for buying and selling video games (open-source competitor to Steam)
+- GitHub / Devpost Link: https://github.com/strangemoodfoundation/strangemood
+- Demo / Pitch: https://www.youtube.com/watch?v=PEpMzL0eGqo
+- Website: https://www.strangemood.org/
+- Hackathon: Riptide (2022)
+- Award: First - Gaming Track
+- Twitter/X: https://twitter.com/strangemoodorg
+
+- Name: Badbeat Poker
+- Description: Online poker club governed by a DAO, rewarding players with utility tokens
+- GitHub / Devpost Link: https://github.com/bigpicture-blockchain/badbeat-poker
+- Demo / Pitch: https://www.youtube.com/watch?v=6NEunbazmow
+- Website: http://www.badbeat.com/
+- Hackathon: Riptide (2022)
+- Award: Fifth - Gaming Track
+- Twitter/X: https://twitter.com/bb_pokerclub
+
+- Name: SolRace
+- Description: First Drive-to-Earn (D2E) game on Solana, integrating racing and blockchain mechanics
+- GitHub / Devpost Link: https://github.com/palsp/solrace
+- Demo / Pitch: https://drive.google.com/drive/folders/1dGiCqS-kcYw99AOrmO3Vs-d4I8LdJi5d?usp=sharing
+- Website: https://www.solrace.xyz/
+- Hackathon: Riptide (2022)
+- Award: Third - Gaming Track
+- Twitter/X: https://twitter.com/projectsolrace
+
+- Name: Forgebots
+- Description: Portals experience for in-game SPL token earning
+- GitHub / Devpost Link: https://github.com/duncan-iaria/r33-server
+- Demo / Pitch: https://www.youtube.com/watch?v=Fr7F4I6bFXM
+- Website: https://gemcollector.forgebots.io/
+- Hackathon: Riptide (2022)
+- Award: Portals Prize
+
+- Name: Shachess
+- Description: Live, decentralized Play-to-Earn chess game
+- GitHub / Devpost Link: https://github.com/armk51/moon_chess
+- Demo / Pitch: https://docs.google.com/presentation/d/1dORgn8xr56RlMAs3iuyt5P-7zgR7Rd4g61Wl9FHqX1U/edit#slide=id.p
+- Website: https://shachess.com/
+- Hackathon: Riptide (2022)
+- Award: Switchboard Prize
+- Twitter/X: https://twitter.com/sha_chess
+
+- Name: LadderCaster
+- Description: First fully on-chain NFT game on Solana
+- GitHub / Devpost Link: https://github.com/laddercaster/ladder-caster-sol
+- Demo / Pitch: https://drive.google.com/file/d/1Cnex-UEm4yeeBHIp7saY83XsGbEK5nfn/view?usp=sharing
+- Website: https://www.laddercaster.com/
+- Hackathon: Riptide (2022)
+- Award: Fourth - Gaming Track
+- Twitter/X: https://twitter.com/LadderCaster
+
+- Name: Rogue Star
+- Description: Futuristic MMORPG combining space shooter gameplay with RPG elements and blockchain ownership
+- GitHub / Devpost Link: https://docs.roguestar.net/
+- Demo / Pitch: https://www.youtube.com/watch?v=aId9QQ0mjek
+- Website: https://roguestar.net
+- Hackathon: Riptide (2022)
+- Award: Second - Gaming Track
+- Twitter/X: https://twitter.com/FindRogueStar
+
+- Name: Solantasy
+- Description: Browser-based 2D Play-to-Earn RPG game on Solana
+- GitHub / Devpost Link: https://gitlab.com/solantasy/solantasy_project
+- Demo / Pitch: https://www.youtube.com/watch?v=Ylge-kr8INU
+- Website: https://solantasy.com/
+- Hackathon: Riptide (2022)
+- Award: Faraway Prize
+
+- Name: Sushi Warrior
+- Description: Multiplayer tournament-style battle game with no-loss lotteries, leveraging Solana, Arweave, Torus, USDC, and AAVE
+- Hackathon: Solana Foundation x Serum DeFi Hackathon (2021)
+- Award: Third - Torus Prize
+
+- Name: Eizper Chain
+- Description: Multiplayer action role-playing game with adventure and arena battle synergy
+- GitHub / Devpost Link: https://devpost.com/software/eizper-chain-solana-arpg-game
+- Demo / Pitch: https://docs.google.com/presentation/d/1z-4IyYmTXz1Zva1nIg5QZ7PdwooqMeVIGHclgwYQZu4/edit
+- Website: https://www.eizperchain.com/
+- Hackathon: Solana IGNITION (2021)
+- Award: Third - Gaming Track
+- Twitter/X: https://twitter.com/EizperChain
+
+- Name: Titan Analytics
+- Description: Commercial analytics platform for the Metaverse
+- GitHub / Devpost Link: https://devpost.com/software/project-titan-qgsckx
+- Demo / Pitch: https://youtu.be/v6S2S0Pekgg
+- Website: https://titan-demo.vercel.app/
+- Hackathon: Solana IGNITION (2021)
+- Award: Fifth - Gaming Track
+- Twitter/X: https://titan-demo.vercel.app/
+
+- Name: Genopets
+- Description: First Move-to-Earn NFT game incentivizing physical activity
+- GitHub / Devpost Link: https://devpost.com/software/genopets-zs1la5, https://github.com/Genopets/ignition-hackathon
+- Demo / Pitch: https://youtu.be/kNA_inYyTog
+- Website: https://www.genopets.me/
+- Hackathon: Solana IGNITION (2021)
+- Award: Stardust Prize
+- Twitter/X: https://twitter.com/genopets
+
+- Name: DarleyGo
+- Description: Blockchain horse racing game utilizing NFTs
+- GitHub / Devpost Link: https://github.com/DarleyGo/, https://devpost.com/software/darleygo
+- Demo / Pitch: https://youtu.be/oHY-LbgAFQ0
+- Website: https://www.darleygo.io/
+- Hackathon: Solana IGNITION (2021)
+- Award: Community Choice Award
+- Twitter/X: https://twitter.com/DarleyGo_io
+
+- Name: StepN
+- Description: Move-to-Earn mobile game onboarding non-crypto runners to crypto
+- GitHub / Devpost Link: https://devpost.com/software/find-satoshi
+- Demo / Pitch: https://youtu.be/-0nS-ZtJmkU
+- Website: https://stepn.com/
+- Hackathon: Solana IGNITION (2021)
+- Award: Fourth - Gaming Track
+- Twitter/X: https://twitter.com/Stepnofficial
+- Latest Update: Raised $5M in 2022
+
+- Name: Rushdown Revolt
+- Description: Collectibles and metaverse framework
+- GitHub / Devpost Link: https://devpost.com/software/rushdown-revolt-enter-the-vortex
+- Demo / Pitch: https://youtu.be/dzRKBsxAoJ4
+- Website: https://store.rushdownrevolt.com/
+- Hackathon: Solana IGNITION (2021)
+- Award: First - Gaming Track
+- Twitter/X: https://twitter.com/rushdownrevolt
+
+- Name: DeFiLand
+- Description: Multi-chain agriculture-simulation web game gamifying decentralized finance
+- GitHub / Devpost Link: https://github.com/DeFi-Land
+- Website: https://defiland.app/
+- Hackathon: Solana Season (2021)
+- Award: Second - DeFi Track
+- Twitter/X: https://twitter.com/defi_land
+- Latest Update: Raised $4.1M in 2021
+
+- Name: SOL Survivor
+- Description: Messaging app and Mortal Kombat-style fighting game on Solana testnet
+- GitHub / Devpost Link: https://github.com/kemargrant/soltalk
+- Demo / Pitch: https://youtu.be/RyCgjsrUJq0
+- Website: https://dnfpbwm8i1o6z.cloudfront.net/
+- Hackathon: Solana Wormhole Hackathon (2020)
+- Award: Third
+
+- Name: Solanaroll
+- Description: Fast, inexpensive dice game with a user-funded pooled treasury
+- GitHub / Devpost Link: https://github.com/turnyay/solanaroll
+- Demo / Pitch: https://mtourig3.medium.com/building-solanaroll-d37c6e477949
+- Website: https://www.solanaroll.com/
+- Hackathon: Solana Wormhole Hackathon (2020)
+- Award: Third
+- Twitter/X: https://twitter.com/solanaroll
+
+- Name: Ping
+- Description: Smart NFT wallet enhancing NFT utility through on-chain metadata
+- GitHub / Devpost Link: https://github.com/alvinsga/ping
+- Demo / Pitch: https://www.youtube.com/watch?v=p9casdM2irc
+- Hackathon: Hyperdrive (2023)
+- Award: Second - Infrastructure Track
+
+- Name: Alchemy: Battle for Ankhos
+- Description: Play-to-own, AI-powered Discord RPG with NFT ownership of in-game assets
+- Website: https://discord.com/invite/playalchemy
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Grand Prize Winner
+- Twitter/X: https://twitter.com/play_alchemy
+
+- Name: FAST (Food and Spaces Together)
+- Description: Blockchain-based platform bridging real estate and food in Mexico with customer loyalty incentives and digital collectibles
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Grand Prize Winner
+
+- Name: IAM
+- Description: Merging e-commerce and blockchain to bridge physical fashion and digital identity
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Grand Prize Winner
+
+- Name: ID8R
+- Description: NFT design app enhancing visual appeal and social reach
+- Website: https://id8r.com/
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Grand Prize Winner
+- Twitter/X: https://twitter.com/ID8R_com
+
+- Name: Lupers
+- Description: NFT collection and brand with an immersive narrative universe
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Grand Prize Winner
+
+- Name: Blue Punch Buggy
+- Description: Sustainable future project through recycling and blockchain education
+- Website: https://bluepunchbuggy.com/
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Runner-Up
+- Twitter/X: https://twitter.com/_bluepunchbuggy
+
+- Name: Hellbenders Motorcycle Club
+- Description: Web3-native, fully on-chain animated MMMG
+- Website: https://www.hellbenders.world/
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Runner-Up
+
+- Name: Impact Aid
+- Description: NFT project connecting collectors with Indian NGOs via tech-integrated cards
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Runner-Up
+
+- Name: MotionX
+- Description: Digital merchandise platform with secure artwork licensing
+- Website: https://motionx-5984.myshopify.com/
+- Hackathon: Solana Foundation NFT Showdown (2023)
+- Award: Runner-Up
+- Twitter/X: https://twitter.com/MotionXUS
+
+- Name: Floop
+- Description: Mobile-first NFT entertainment platform for creators
+- GitHub / Devpost Link: https://github.com/floopnft/app
+- Demo / Pitch: https://docs.google.com/presentation/d/e/2PACX-1vSJwDrSBbBI1DWMk86ZJaxhdY8a0dweqtR0BQQHyS8tv1bCEbpC5pWFSBk0IpkI-5Nnegvvxf8gy72s/pub?start=false&loop=false&delayms=60000&slide=id.p
+- Website: https://www.floop.art/
+- Hackathon: Grizzlython (2023)
+- Award: Second - Consumer Track
+- Twitter/X: https://twitter.com/floopNFT
+
+- Name: Re:naissance
+- Description: Seamless royalty solution for NFT communities built as xNFT on Backpack
+- GitHub / Devpost Link: https://github.com/builderz-labs/renaissance-xnft
+- Demo / Pitch: https://vimeo.com/808021937
+- Website: https://www.xnft.gg/app/2394APCiqS2Q6iqsGiqN769QVJw8EooFWtRiVNK8TEsY
+- Hackathon: Grizzlython (2023)
+- Award: Third - DAOs Track
+- Twitter/X: https://twitter.com/renaissance_xyz
+
+- Name: Tensor Trade
+- Description: NFT trading venue for professional traders
+- GitHub / Devpost Link: https://github.com/tensor-hq
+- Demo / Pitch: https://drive.google.com/drive/folders/1kxc2F9bV5Z7VNFtsMBTRhvn_z7pKlEOA
+- Website: https://www.tensor.trade/
+- Hackathon: Summer Camp (2022)
+- Award: Second - DeFi Track
+- Twitter/X: https://twitter.com/tensor_hq
+
+- Name: DEBEATS
+- Description: Decentralized music NFT game for playing, creating, and earning
+- GitHub / Devpost Link: https://github.com/DEBEATS
+- Demo / Pitch: https://www.youtube.com/watch?v=ONgq6xBThXQ
+- Website: https://debeats.com/
+- Hackathon: Summer Camp (2022)
+- Award: Second - Gaming Track
+- Twitter/X: https://twitter.com/debeats_com
+
+- Name: BlockLive
+- Description: Fast, transparent event management and ticketing app on Solana
+- GitHub / Devpost Link: https://github.com/BlockLive
+- Demo / Pitch: https://www.youtube.com/watch?v=rnDnUnW8tbs
+- Website: https://blocklive.io/
+- Hackathon: Summer Camp (2022)
+- Award: First - Mobile Track
+- Twitter/X: https://twitter.com/blocklive_
+
+- Name: Artemi
+- Description: GPS-based gamified launchpad for distributing NFTs in real-life locations
+- GitHub / Devpost Link: https://github.com/Scripter802/Artemi
+- Demo / Pitch: https://www.youtube.com/watch?v=YKqd1ePqYTQ
+- Website: https://artemi.tech/
+- Hackathon: Summer Camp (2022)
+- Award: Third - Gaming Track
+- Twitter/X: https://twitter.com/artemi_tech
+
+- Name: Tensor
+- Description: Critical data infrastructure and tooling for digital ownership
+- GitHub / Devpost Link: https://github.com/tensor-hq/
+- Demo / Pitch: https://www.youtube.com/watch?v=eT-jRWKdLp4
+- Website: https://www.tensor.so/
+- Hackathon: Riptide (2022)
+- Award: Third - Web3 Track, Switchboard Prize
+- Twitter/X: https://twitter.com/tensor_hq
+
+- Name: Dragverse
+- Description: Decentralized drag network platform
+- GitHub / Devpost Link: https://github.com/DragVerse
+- Demo / Pitch: https://www.youtube.com/watch?v=pXaKOF8Zptg
+- Website: https://www.dragverse.io/
+- Hackathon: Riptide (2022)
+- Award: Stardust Prize, Burnt Finance Prize
+- Twitter/X: https://twitter.com/metadragverse
+
+- Name: Pixelnaut Pet Shop
+- Description: Pixelnaut Pet Shop is a game for Orcanaut NFT owners to raise a pixelated version of their NFT as a pet. It has the potential to develop into a P2E game that integrates with Orca.so. Test it by playing at https://pixelnauts.shop.
+- GitHub / Devpost Link: https://github.com/fuzzyyeti/pixelnautpets
+- Demo / Pitch: https://docs.google.com/presentation/d/1T7UZN7NLvVEw-SCvrtuY_JNDZ_WqQjL2nythFUHzrSk/edit
+- Website: https://pixelnauts.shop/
+- Hackathon: Riptide (2022)
+- Award: Orca Prize
+
+- Name: Cardinal
+- Description: Cardinal is a Solana Protocol that enables conditional ownership of NFTs. We're powering the future of NFT utility through rentals, staking, ticketing, and more
+- GitHub / Devpost Link: https://github.com/cardinal-labs
+- Demo / Pitch: https://www.youtube.com/watch?v=KPDSAuzdojA
+- Website: https://www.cardinal.so/
+- Hackathon: Riptide (2022)
+- Award: Portals Prize
+- Twitter/X: https://twitter.com/cardinal_labs
+
+
+
+- Name: Crossmint
+- Description: Making NFTs accessible to everyone
+- GitHub / Devpost Link: https://github.com/crossmint
+- Demo / Pitch: https://vimeo.com/671525311
+- Website: https://www.crossmint.com/
+- Hackathon: Riptide (2022)
+- Award: Second - Web3 Track
+- Twitter/X: https://twitter.com/crossmint
+
+
+
+- Name: Sonanalysis NFT Flex
+- Description: An NFT showcase and value estimation product.
+- GitHub / Devpost Link: https://devpost.com/software/solanalysis-nft-flex
+- Demo / Pitch: https://youtu.be/_xlE0fuCQhg
+- Website: https://solanalysis.com/nft-flex
+- Hackathon: Solana IGNITION (2021)
+- Award: Fourth - NFT Track
+
+
+- Name: Portals
+- Description: A web-based metaverse platform for Solana
+- GitHub / Devpost Link: https://devpost.com/software/the-portal-563g1u
+- Demo / Pitch: https://youtu.be/8JwMKbJhtLA
+- Website: https://theportal.to/
+- Hackathon: Solana IGNITION (2021)
+- Award: Second - Gaming Track
+- Twitter/X: https://twitter.com/_portals_
+
+
+- Name: Neftify
+- Description: An NFT lending platform for play-to-earn games
+- GitHub / Devpost Link: https://github.com/neftify
+- Demo / Pitch: https://youtu.be/9a4znQxOkOc
+- Website: https://neftify.com/
+- Hackathon: Solana IGNITION (2021)
+- Award: First - NFT Track
+- Twitter/X: https://twitter.com/neftify
+
+
+
+- Name: Banksea
+- Description: Pool-based lending collateralized with a user’s NFT collection
+- GitHub / Devpost Link: https://devpost.com/software/banksy-finance
+- https://github.com/Banksea-Finance/
+- Demo / Pitch: https://youtu.be/BC_rQOubk4w
+- Website: https://banksea.finance/
+- Hackathon: Solana IGNITION (2021)
+- Award: Fifth - NFT Track
+- Twitter/X: https://twitter.com/banksea_finance
+
+
+- Name: Cofre
+- Description: A peer-to-peer NFT escrow swap
+- GitHub / Devpost Link: https://devpost.com/software/cofre-rwgb37
+- https://github.com/cofre-hq
+- Demo / Pitch: https://twitter.com/banksea_finance
+- Website: https://cofre.so
+- Hackathon: Solana IGNITION (2021)
+- Award: Third - NFT Track
+- Twitter/X: https://twitter.com/cofre_hq
+
+
+- Name: SolanaFloor
+- Description: An NFT data analytics platform
+- GitHub / Devpost Link: https://devpost.com/software/solanafloor
+- Website: https://solanafloor.com/
+- Hackathon: Solana IGNITION (2021)
+- Award: Second - NFT Track
+- Twitter/X: https://twitter.com/SolanaFloor
+- Latest Update: Acquired by Step Finance in July 2022
+
+
+- Name: Coral Reef
+- Description: An NFT marketplace with the ability to Fractionalize.
+- GitHub / Devpost Link: https://github.com/kornatisOiga/coralreef
+- Demo / Pitch: https://www.youtube.com/watch?v=7CejFcG2GPs
+- Website: https://coralreef.art
+- Hackathon: Solana Season (2021)
+- Award: First - NFT Track
+
+
+
+- Name: All-Art protocol
+- Description: The All-Art protocol provides constant liquidity for NFTs by introducing a new type of liquidity pool AMMs, while upgrading the current NFT standard with improved functionalities and embedded license rights called NFT-PRO.
+- GitHub / Devpost Link: https://gitlab.com/all-art-protocol/all-art-protocol
+- Demo / Pitch: https://vimeo.com/560272548
+- Website: https://all.art/
+- Hackathon: Solana Season (2021)
+- Award: Second - NFT Track
+- Twitter/X: https://twitter.com/AllArtProtocol
+
+
+- Name: UNQ Club
+- Description: A platform for NFT collectors and communities that allow users to create clubs, buy and sell NFTs across chains, raise funds, and bring more value to collectives.
+- GitHub / Devpost Link: https://github.com/unqclub
+- Website: https://unique.vc/
+- Hackathon: Solana Season (2021)
+- Award: Third - Eastern Europe Prize
+- Twitter/X: https://drive.google.com/file/d/1-IbJew30IDv7dTnPtXly7PB-2Moep9tV/view
+- Latest Update: Now called Unique Venture Clubs
+
+
+- Name: Kurobi
+- Description: Kurobi app allows you to connect 1:1 with your audience and earn crypto or cash.
+- GitHub / Devpost Link: https://github.com/KurobiHq/escrow-payment
+- Demo / Pitch: https://drive.google.com/file/d/1D6pWexAlST6YjENKqfI0C3tpc3ujy83j/view
+- Website: https://kurobi.io/
+- Hackathon: Solana Season (2021)
+- Award: Kin Prize
+- Third - Africa Prize
+- Twitter/X: https://twitter.com/kurobi_io
