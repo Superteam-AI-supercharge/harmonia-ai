@@ -1,0 +1,1 @@
+fastapi uvicorn python-telegram-bot python-dotenv langchain faiss-cpu sentence-transformers PyPDF2 python-docx groq

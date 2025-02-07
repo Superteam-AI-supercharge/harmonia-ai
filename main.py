@@ -1,122 +1,182 @@
 # main.py
-from fastapi import FastAPI, UploadFile, File
+from fastapi import FastAPI, UploadFile, File, HTTPException
 from pydantic import BaseModel
 from dotenv import load_dotenv
-from document_processor import DocumentProcessor
-import os
-from groq import Groq  # Import the Groq client
-import json
+import os, uuid, json
+from groq import Groq  # Our LLM client (Groq-hosted Llama)
+from document_processor import DocumentProcessor  # Updated processor that handles directories & multiple file types
+
+# LangChain prompt and memory imports
+from langchain_core.prompts import (
+    HumanMessagePromptTemplate,
+    SystemMessagePromptTemplate,
+    ChatPromptTemplate,
+    MessagesPlaceholder
+)
+from langchain_core.messages import HumanMessage, AIMessage
+from langchain.memory import ConversationBufferMemory
 
 load_dotenv()
 app = FastAPI()
 
-# Initialize the document processor.
+# Initialize Document Processor (builds vector store from directory)
 doc_processor = DocumentProcessor()
-
-# Load the JSON dataset at startup.
-json_dataset_path = "dataset.json"  # Path to your cleaned JSON dataset
-if os.path.exists(json_dataset_path):
-    doc_processor.add_json_dataset(json_dataset_path)
-else:
-    print(f"JSON dataset not found at {json_dataset_path}")
+doc_processor.add_documents_from_directory("/Users/favourolaboye/Documents/Test/superteam_directory")
+# The vector store is accessible via: doc_processor.vector_store
 
 # Initialize the Groq client with the API key from the environment.
 groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
+# Admin token for protected endpoints.
+ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "secret_admin")
+
+# ---------------------------
+# Define Prompt Templates and Memory
+# ---------------------------
+# Prompt template for /learn endpoint (general queries)
+learn_system_template = SystemMessagePromptTemplate.from_template(
+    template=(
+        "You are an expert on Superteam. Use only the provided context to answer the query. "
+        "If the context does not contain enough information, reply with 'I don't know'."
+    )
+)
+learn_human_template = HumanMessagePromptTemplate.from_template(template="{input}")
+learn_prompt = ChatPromptTemplate.from_messages(
+    [learn_system_template, MessagesPlaceholder(variable_name="history"), learn_human_template]
+)
+
+# Prompt template for /find endpoint (finding superteam members)
+find_system_template = SystemMessagePromptTemplate.from_template(
+    template=(
+        "You are an expert on Superteam members. Answer strictly based on the documented data. "
+        "If you do not have relevant information, reply with 'I don't know'."
+    )
+)
+find_human_template = HumanMessagePromptTemplate.from_template(template="{input}")
+find_prompt = ChatPromptTemplate.from_messages([find_system_template, find_human_template])
+
+# ---------------------------
+# In-memory conversation memory: dictionary mapping session_id to list of message objects.
 conversation_memory = {}
 
-def generate_answer(query: str, context: str, conversation_history: str) -> str:
-    """
-    Generate an answer using the Llama 3.3 70B model on Groq Cloud.
-    This function constructs a prompt combining:
-      - the conversation history,
-      - the retrieved context from the dataset, and
-      - the current query.
-    If the context is insufficient, it returns a fallback response.
-    """
-    if not context or len(context) < 20:
-        return "I don't have enough information to answer that."
+# ---------------------------
+# Endpoint 1: Find Superteam Members
+# ---------------------------
+class FindRequest(BaseModel):
+    query: str
 
-    full_context = f"Conversation History:\n{conversation_history}\nContext:\n{context}"
-    prompt = f"Query: {query}\n{full_context}\nAnswer:"
-
+@app.post("/find")
+async def find_members(request: FindRequest):
+    query = request.query
+    # Perform similarity search in the vector store.
+    results = doc_processor.vector_store.similarity_search(query, k=5)
+    context = "\n".join(
+        [f"Content: {doc.page_content}\nMetadata: {doc.metadata}" for doc in results]
+    )
+    # Format the prompt using the find prompt template.
+    prompt = find_prompt.format(input=f"Query: {query}\nContext:\n{context}")
     try:
         chat_completion = groq_client.chat.completions.create(
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
+            messages=[{"role": "user", "content": prompt}],
             model="llama3-70b-8192",
             stream=False,
         )
         answer = chat_completion.choices[0].message.content.strip()
-        if not answer or "I don't know" in answer.lower():
-            return "I don't have enough information to answer that."
-        return answer
+        if not answer or "i don't know" in answer.lower():
+            answer = "I don't know"
     except Exception as e:
-        print(f"Error generating answer: {e}")
-        return "I don't have enough information to answer that."
+        print(f"Error generating answer in /find: {e}")
+        answer = "I don't know"
+    return {"answer": answer, "context": context}
 
-class QueryRequest(BaseModel):
+# ---------------------------
+# Endpoint 2: Learn (General Query with Conversation Memory)
+# ---------------------------
+class LearnRequest(BaseModel):
     query: str
     session_id: str = "default"
 
-@app.post("/query")
-async def query_knowledge(request: QueryRequest):
+@app.post("/learn")
+async def learn(request: LearnRequest):
     query = request.query
-    session = request.session_id
-    results = doc_processor.search(query, top_k=5)
     print(query)
+    session = request.session_id
 
-
-    context = "\n".join([
-        (
-            f"Title: {item['metadata'].get('title', 'Unknown')}\n"
-            f"Region: {item['metadata'].get('region', 'Unknown')}\n"
-            f"Source: {item['metadata'].get('source', 'Unknown')}\n"
-            f"Source URL: {item['metadata'].get('source_url', 'Unknown')}\n"
-            f"Tags: {', '.join(item['metadata'].get('tags', []))}\n"
-            f"Content: {item['chunk']}\n"
+    # Search the vector store for context.
+    results = doc_processor.vector_store.similarity_search(query, k=5)
+    context = "\n".join(
+        [f"Content: {doc.page_content}\nMetadata: {doc.metadata}" for doc in results]
+    )
+    
+    # Ensure conversation memory for this session is a list of message objects.
+    if session not in conversation_memory:
+        conversation_memory[session] = []
+    conversation = conversation_memory[session]
+    
+    # Append the current user query to the conversation history.
+    conversation.append(HumanMessage(content=query))
+    
+    # Build the prompt using the learn prompt template.
+    # We pass the conversation history (a list of base messages) as "history".
+    prompt = learn_prompt.format(input=query, history=conversation + [HumanMessage(content=f"Context:\n{context}")])
+    
+    try:
+        chat_completion = groq_client.chat.completions.create(
+            messages=[{"role": "user", "content": prompt}],
+            model="llama3-70b-8192",
+            stream=False,
         )
-        for item in results
-    ])
-    conv_history = conversation_memory.get(session, "")
+        answer = chat_completion.choices[0].message.content.strip()
+        print(answer)
+        if not answer or "i don't know" in answer.lower():
+            answer = "I don't know"
+    except Exception as e:
+        print(f"Error generating answer in /learn: {e}")
+        answer = "I don't know"
     
-    # Generate an answer using the Groq Llama API, including conversation history.
-    answer = generate_answer(query, context, conv_history)
-    print(answer)
+    # Append the agent's answer to the conversation history.
+    conversation.append(AIMessage(content=answer))
     
-    # Update conversation memory with the new query and answer.
-    # For simplicity, we append as plain text. In a production setting, you might store structured data.
-    new_entry = f"Q: {query}\nA: {answer}\n"
-    conversation_memory[session] = conv_history + "\n" + new_entry if conv_history else new_entry
-
     return {"answer": answer, "context": context}
 
+# ---------------------------
+# Endpoint 3: Upload Documents (Admin Only)
+# ---------------------------
 @app.post("/upload")
-async def upload_file(file: UploadFile = File(...)):
-    """
-    Endpoint for uploading documents (PDF or text files) to process and add to the index.
-    """
-    try:
-        # Save the uploaded file temporarily.
-        file_path = f"temp/{file.filename}"
-        os.makedirs("temp", exist_ok=True)
-        with open(file_path, "wb") as f:
-            content = await file.read()
-            f.write(content)
+async def upload_document(admin_token: str, file: UploadFile = File(...)):
+    if admin_token != ADMIN_TOKEN:
+        raise HTTPException(status_code=403, detail="Not authorized")
+    
+    # Save the uploaded file temporarily.
+    os.makedirs("temp", exist_ok=True)
+    temp_path = f"temp/{file.filename}"
+    with open(temp_path, "wb") as f:
+        f.write(await file.read())
+    
+    # Process file using document_processor.
+    doc_processor.process_file(temp_path, base_dir="uploads")
+    doc_processor.build_index()  # Rebuild the index after adding new documents.
+    
+    os.remove(temp_path)
+    return {"message": f"File '{file.filename}' uploaded and processed."}
 
-        # Add the document to the processor.
-        doc_id = os.path.splitext(file.filename)[0]
-        doc_processor.add_document(file_path, doc_id)
+# ---------------------------
+# Endpoint 4: Delete Documents (Admin Only)
+# ---------------------------
+class DeleteRequest(BaseModel):
+    admin_token: str
+    doc_ids: list[str]
 
-        # Clean up the temporary file.
-        os.remove(file_path)
+@app.post("/delete")
+async def delete_document(request: DeleteRequest):
+    if request.admin_token != ADMIN_TOKEN:
+        raise HTTPException(status_code=403, detail="Not authorized")
+    doc_processor.vector_store.delete(ids=request.doc_ids)
+    return {"message": "Documents deleted successfully."}
 
-        return {"message": f"File '{file.filename}' processed and added to the index."}
-
-    except Exception as e:
-        print(f"Error processing file: {e}")
-        return {"error": f"Failed to process file: {str(e)}"}
-
-# To run the API, use:
-# uvicorn main:app --reload
+# ---------------------------
+# Run the Application
+# ---------------------------
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
