@@ -7,25 +7,9 @@ from telegram.ext import (
 )
 import requests
 
-# URL of the FastAPI endpoint for queries (your existing endpoint)
-API_URL = "http://localhost:8000/query"
-
-# Admin user IDs (replace with actual admin Telegram user IDs)
-ADMIN_IDS = [123456789, 987654321]  # Example IDs
-
 # Define conversation states
 SELECT_DIR, WAIT_DOCUMENT = range(2)
-
-# List of available directories for upload
-UPLOAD_DIRECTORIES = [
-    "superteam",
-    "solana",
-    "superteam_vn",
-    "superteam_nig",
-    "bounties",
-    "grants",
-    "hackatons"
-]
+api_url = os.environ.get("API_URL")
 
 # Set up logging.
 logging.basicConfig(
@@ -42,7 +26,7 @@ async def handle_query(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_query = update.message.text
     try:
         # Post the query to the FastAPI endpoint.
-        response = requests.post(API_URL, json={"query": user_query})
+        response = requests.post(api_url, json={"query": user_query})
         if response.status_code == 200:
             data = response.json()
             answer = data.get("answer", "NO")
@@ -146,59 +130,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-# # telegram_bot.py
-# import logging
-# import requests
-# from telegram import Update
-# from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
-
-# # URL of the FastAPI endpoint we created in Step 2.
-# API_URL = "http://localhost:8000/query"
-
-# # Set up logging.
-# logging.basicConfig(
-#     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
-# )
-
-# async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-#     """Send a welcome message when the bot starts."""
-#     await update.message.reply_text("Hello! I am the Superteam Knowledge Bot. Ask me anything.")
-
-# async def handle_query(update: Update, context: ContextTypes.DEFAULT_TYPE):
-#     """Handle incoming text messages as queries."""
-#     user_query = update.message.text
-#     try:
-#         # Post the query to the FastAPI endpoint.
-#         response = requests.post(API_URL, json={"query": user_query})
-#         if response.status_code == 200:
-#             data = response.json()
-#             answer = data.get("answer", "NO")
-#             await update.message.reply_text(answer)
-#         else:
-#             await update.message.reply_text("Error retrieving answer.")
-#     except Exception as e:
-#         await update.message.reply_text("An error occurred while processing your query.")
-
-# def main():
-#     """Start the Telegram bot."""
-#     # Replace 'YOUR_TELEGRAM_BOT_TOKEN' with your actual Telegram bot token.
-#     application = ApplicationBuilder().token("8084141502:AAF1vX9QnBBJQdvmxRIA6s-V_LPgPMPYnrg").build()
-
-#     # Handlers for commands and text messages.
-#     application.add_handler(CommandHandler("start", start))
-#     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_query))
-
-#     # Start polling for updates from Telegram.
-#     application.run_polling()
-
-# if __name__ == '__main__':
-#     main()
-
-
-

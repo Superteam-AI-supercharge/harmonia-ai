@@ -19,16 +19,17 @@ from langchain.memory import ConversationBufferMemory
 load_dotenv()
 app = FastAPI()
 
-# Initialize Document Processor (builds vector store from directory)
-doc_processor = DocumentProcessor()
-doc_processor.add_documents_from_directory("/Users/favourolaboye/Documents/Test/superteam_directory")
-# The vector store is accessible via: doc_processor.vector_store
-
-# Initialize the Groq client with the API key from the environment.
+superteam_data_path = os.environ.get("SUPERTEAM_DATA_DIRECTORY_PATH")
+ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN")
 groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
-# Admin token for protected endpoints.
-ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "secret_admin")
+
+
+# Initialize Document Processor (builds vector store from directory)
+doc_processor = DocumentProcessor()
+doc_processor.add_documents_from_directory(superteam_data_path)
+# The vector store is accessible via: doc_processor.vector_store
+
 
 # ---------------------------
 # Define Prompt Templates and Memory
