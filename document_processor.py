@@ -1,32 +1,28 @@
-# document_processing.py
-import os
-import re
-import json
+# document_processor.py (excerpt)
+import os, re, json, csv
 from typing import List, Dict, Any
 import faiss
-import csv
 import numpy as np
-from langchain_huggingface import HuggingFaceEmbeddings
+import uuid
 from langchain_core.documents import Document
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores import FAISS
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS as LCFAISS
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from PyPDF2 import PdfReader
 import docx
+from db_manager import insert_document, load_all_documents  # Import our DB functions
 
+MODEL_NAME = "all-MiniLM-L6-v2"
 
 class DocumentProcessor:
-    def __init__(self, embedding_model_name: str = "all-MiniLM-L6-v2", chunk_size: int = 100, chunk_overlap: int = 20):
-        # Use the updated HuggingFaceEmbeddings from langchain_huggingface.
+    def __init__(self, embedding_model_name: str = MODEL_NAME, chunk_size: int = 100, chunk_overlap: int = 20):
         self.embedding_model = HuggingFaceEmbeddings(model_name=embedding_model_name)
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
-        self.documents: List[Document] = []  # List of LangChain Document objects
-
-        # Initialize FAISS index using embedding dimension.
+        self.documents: List[Document] = []
         embedding_dim = len(self.embedding_model.embed_query("test"))
         self.index = faiss.IndexFlatL2(embedding_dim)
-        self.vector_store = FAISS(
+        self.vector_store = LCFAISS(
             embedding_function=self.embedding_model,
             index=self.index,
             docstore=InMemoryDocstore(),
@@ -35,8 +31,7 @@ class DocumentProcessor:
 
     def preprocess_text(self, text: str) -> str:
         text = text.strip()
-        text = re.sub(r'\s+', ' ', text)
-        return text
+        return re.sub(r'\s+', ' ', text)
 
     def chunk_text(self, text: str) -> List[str]:
         words = text.split()
@@ -44,11 +39,11 @@ class DocumentProcessor:
         start = 0
         while start < len(words):
             end = min(start + self.chunk_size, len(words))
-            chunk = " ".join(words[start:end])
-            chunks.append(chunk)
+            chunks.append(" ".join(words[start:end]))
             start += self.chunk_size - self.chunk_overlap
         return chunks
 
+    # Extraction methods for PDF, DOCX, CSV, etc. (same as before)
     def extract_text_from_pdf(self, filepath: str) -> str:
         text = ""
         try:
@@ -61,22 +56,6 @@ class DocumentProcessor:
             print(f"Error reading PDF {filepath}: {e}")
         return text
 
-
-    def extract_text_from_csv(self, filepath: str) -> str:
-        """Extract text from a CSV file by joining each row's columns."""
-        text = ""
-        try:
-            with open(filepath, "r", encoding="utf-8") as csvfile:
-                reader = csv.reader(csvfile)
-                for row in reader:
-                    row_text = " | ".join(row)
-                    text += row_text + "\n"
-        except Exception as e:
-            print(f"Error reading CSV {filepath}: {e}")
-        return text
-
-
-
     def extract_text_from_docx(self, filepath: str) -> str:
         try:
             doc = docx.Document(filepath)
@@ -84,6 +63,17 @@ class DocumentProcessor:
         except Exception as e:
             print(f"Error reading DOCX {filepath}: {e}")
             return ""
+
+    def extract_text_from_csv(self, filepath: str) -> str:
+        text = ""
+        try:
+            with open(filepath, "r", encoding="utf-8") as csvfile:
+                reader = csv.reader(csvfile)
+                for row in reader:
+                    text += " | ".join(row) + "\n"
+        except Exception as e:
+            print(f"Error reading CSV {filepath}: {e}")
+        return text
 
     def process_file(self, filepath: str, base_dir: str) -> None:
         ext = os.path.splitext(filepath)[1].lower()
@@ -112,7 +102,7 @@ class DocumentProcessor:
                         "tags": entry.get("tags", [])
                     })
                     description = self.preprocess_text(entry.get("description", ""))
-                    self.add_document(description, entry_metadata)
+                    self.add_document(description, entry_metadata, file_name)
             elif isinstance(data, dict):
                 entry_metadata = metadata.copy()
                 entry_metadata.update({
@@ -122,34 +112,37 @@ class DocumentProcessor:
                     "tags": data.get("tags", [])
                 })
                 description = self.preprocess_text(data.get("description", ""))
-                self.add_document(description, entry_metadata)
+                self.add_document(description, entry_metadata, file_name)
             return
         elif ext == ".txt":
             with open(filepath, "r", encoding="utf-8") as f:
                 content = f.read()
         elif ext == ".pdf":
             content = self.extract_text_from_pdf(filepath)
-        elif ext == ".csv":
-            content = self.extract_text_from_csv(filepath)
         elif ext in [".doc", ".docx"]:
             content = self.extract_text_from_docx(filepath)
+        elif ext == ".csv":
+            content = self.extract_text_from_csv(filepath)
         else:
             print(f"Unsupported file type: {filepath}")
             return
 
         content = self.preprocess_text(content)
-        self.add_document(content, metadata)
+        self.add_document(content, metadata, file_name)
 
-    def add_document(self, content: str, metadata: Dict[str, Any]) -> None:
+    def add_document(self, content: str, metadata: Dict[str, Any], file_name: str) -> None:
         chunks = self.chunk_text(content)
-        # Create Document objects for each chunk.
         for chunk in chunks:
             doc = Document(page_content=chunk, metadata=metadata)
             self.documents.append(doc)
-        # NOTE: Do not rebuild index on every document addition.
-    
+            # Generate a unique ID for the document chunk.
+            doc_id = str(uuid.uuid4())
+            # Insert into the SQLite DB.
+            from db_manager import insert_document  # Import here to avoid circular imports
+            insert_document(doc_id, metadata.get("directory", "unknown"), file_name, chunk, metadata)
+        # Note: Do not rebuild index on every addition.
+
     def build_index(self) -> None:
-        # Build the index only once after all documents are added.
         if not self.documents:
             return
         self.vector_store.add_documents(documents=self.documents)
@@ -164,22 +157,29 @@ class DocumentProcessor:
                 file_count += 1
                 print(f"Processed file: {filepath}")
         print(f"Total files processed: {file_count}")
-        # Rebuild the index once after processing all files.
         self.build_index()
 
-    def search(self, query: str, k: int = 5) -> List[Document]:
-        results = self.vector_store.similarity_search(query, k=k)
-        return results
+    def load_documents_from_db(self) -> None:
+        from db_manager import load_all_documents
+        docs = load_all_documents()
+        for doc_data in docs:
+            metadata = doc_data["metadata"]
+            doc = Document(page_content=doc_data["content"], metadata=metadata)
+            self.documents.append(doc)
+        self.build_index()
 
 # For testing purposes:
 if __name__ == "__main__":
+    # Initialize DB first
+    from db_manager import init_db
+    init_db()
     dp = DocumentProcessor()
-    dp.add_documents_from_directory("/Users/favourolaboye/Documents/Test/superteam_directory")
-    results = dp.search("I need mentors in the superteam vietnam community. Any idea how to reach them?")
+    # Alternatively, you could load from DB:
+    dp.load_documents_from_db()
+    results = dp.search("Tell me about superteam generally")
     print("Search results:")
     for doc in results:
         print(f"Title: {doc.metadata.get('title')}, Content: {doc.page_content[:100]}...")
-
 
 
 
