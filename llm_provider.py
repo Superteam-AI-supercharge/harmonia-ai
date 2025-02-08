@@ -8,9 +8,9 @@ if USE_LOCAL:
     # Use the Ollama Python package for local inference.
     import ollama
 
-    def get_llm_response(messages, model="llama3.3-8b"):
+    def get_llm_response(messages, model="llama3:8b"):
         """
-        Invoke the local Llama 3.3-8b model using Ollama.
+        Invoke the local Llama 3-8b model using Ollama.
         Expects messages as a list of dicts with keys "role" and "content".
         """
         try:

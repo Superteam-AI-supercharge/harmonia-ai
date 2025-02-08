@@ -297,6 +297,3 @@ if __name__ == "__main__":
 
 
 # SELECT * FROM documents;
-
-
-# SELECT * FROM documents;
