@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     GROQ_API_KEY: str
-    SUPERTEAM_DATA_DIR: str = "./data"
+    SUPERTEAM_DATA_DIR: str = "./superteam_data"
     ADMIN_TOKENS: list[str] = []
     USE_LOCAL_LLM: bool = False
     PUBLISH_MODE: str = "simulation"  # simulation or production
