@@ -72,6 +72,7 @@ Create a `.env` file in the project root and add the following variables:
 ```env
 GROQ_API_KEY=your_groq_api_key_here
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
+use_local=True
 ```
 
 ---
@@ -133,18 +134,22 @@ http://127.0.0.1:8000/docs
 
 - #### **/twitter-pipeline:**
 - - Send POST requests with a JSON body:
+```json
 {
-  "theme": "I got into BU",
+   "theme": "I got into BU",
   "admin_token": ""
-
 }
+```
 - #### **/improve_content:**
 - - Send POST requests with a JSON body:
+```json
 {
   "content": "string",
   "platform": "twitter",
   "session_id": "default"
 }
+```
+
 
 #### **/delete Endpoint:**
 - Use this endpoint to delete documents (PDF, DOCX, TXT, JSON).
