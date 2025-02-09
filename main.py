@@ -8,6 +8,9 @@ from groq import Groq  # Our LLM client (Groq-hosted Llama)
 from document_processor import DocumentProcessor  # Updated processor that handles directories & multiple file types
 from db_manager import init_db 
 from db_manager import load_all_documents
+from models.schemas import DraftEdit, DraftRequest
+from agents.tweet_agent import TweetAgent
+from agents.content_advisor import ContentAdvisor
 
 # LangChain prompt and memory imports
 from langchain_core.prompts import (
@@ -22,18 +25,29 @@ from langchain.memory import ConversationBufferMemory
 load_dotenv()
 app = FastAPI()
 
-# Initialize the SQLite database (create table if not exists)
 init_db()
 
 superteam_data_path = os.environ.get("SUPERTEAM_DATA_DIRECTORY_PATH")
-ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN")
+ADMIN_TOKEN_STRINGS = os.environ.get("ADMIN_TOKEN")
+ADMIN_TOKENS_ARRAY = ADMIN_TOKEN_STRINGS.split(',')
 groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+
+tweet_agent = TweetAgent(groq_client)
+content_advisor = ContentAdvisor(groq_client)
+
 
 
 # Initialize Document Processor (builds vector store from directory)
 doc_processor = DocumentProcessor()
 doc_processor.load_documents_from_db()
 
+def admin_checks(admin_token):
+    if admin_token not in ADMIN_TOKEN_STRINGS:
+        raise HTTPException(status_code=403, detail="Not authorized")
+
+class TweetRequest(BaseModel):
+    theme: str
+    admin_token: str
 
 # ---------------------------
 # Define Prompt Templates and Memory
@@ -76,7 +90,7 @@ conversation_memory = {}
 class FindRequest(BaseModel):
     query: str
 
-@app.post("/find")
+@app.get("/find")
 async def find_members(request: FindRequest):
     query = request.query
     print(query)
@@ -212,8 +226,7 @@ async def learn(request: LearnRequest):
 # ---------------------------
 @app.post("/upload")
 async def upload_document(admin_token: str, file: UploadFile = File(...)):
-    if admin_token != ADMIN_TOKEN:
-        raise HTTPException(status_code=403, detail="Not authorized")
+    admin_checks(admin)
     
     # Create directories for temporary and permanent storage if they don't exist.
     os.makedirs("temp", exist_ok=True)
@@ -238,6 +251,8 @@ async def upload_document(admin_token: str, file: UploadFile = File(...)):
     
     return {"message": f"File '{file.filename}' uploaded, processed, and saved permanently at '{permanent_path}'."}
 
+
+
 # ---------------------------
 # Endpoint 4: Delete Documents by File name (Admin Only)
 # ---------------------------
@@ -248,8 +263,7 @@ class DeleteByFileRequest(BaseModel):
 
 @app.post("/delete_by_file")
 async def delete_by_file(request: DeleteByFileRequest):
-    if request.admin_token != ADMIN_TOKEN:
-        raise HTTPException(status_code=403, detail="Not authorized")
+    admin_checks(admin_token)
     
     from db_manager import delete_documents_by_file
     delete_documents_by_file(request.file_name)
@@ -267,8 +281,7 @@ async def delete_by_file(request: DeleteByFileRequest):
 
 @app.get("/list")
 async def list_documents(admin_token: str):
-    if admin_token != ADMIN_TOKEN:
-        raise HTTPException(status_code=403, detail="Not authorized")
+    admin_checks(admin_token)
     
     # Load all documents from the SQLite database.
     docs = load_all_documents()
@@ -288,15 +301,53 @@ async def list_documents(admin_token: str):
     summary = list(grouped.values())
     return {"documents": summary}
 
-# ---------------------------
-# Run the Application
-# ---------------------------
+
+@app.post("/tweet-pipeline")
+async def tweet_pipeline(request: TweetRequest):
+    # Verify admin access
+    admin_checks(request.admin_token)
+    
+    # Execute full pipeline
+    result = tweet_agent.process_request(request.theme)
+    
+    
+    return {
+        "status": "success",
+        "threads": result["final_threads"]
+    }
+
+class ImproveRequest(BaseModel):
+    content: str
+    platform: str = "twitter"
+    session_id: str = "default"
+
+class ThreadRequest(BaseModel):
+    topic: str 
+    points: list[str]
+    platform: str = "twitter"
+
+@app.post("/improve-content")
+async def improve_content(request: ImproveRequest):
+    result = await content_advisor.improve_content(
+        request.content, 
+        request.platform
+    )
+    return {"versions": result["versions"]}
+
+@app.post("/generate-thread")
+async def generate_thread(request: ThreadRequest):
+    result = await content_advisor.generate_thread(
+        request.topic,
+        request.points,
+        request.platform
+    )
+    return {"thread": result["thread"]}
+
+@app.post("/refine-content")
+async def refine_content(session_id: str, feedback: str):
+    result = await content_advisor.refine_content(session_id, feedback)
+    return {"suggestions": result}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
-
-
-# SELECT * FROM documents;
-
-
-# SELECT * FROM documents;

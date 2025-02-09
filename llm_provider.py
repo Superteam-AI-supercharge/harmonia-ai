@@ -43,3 +43,21 @@ else:
         except Exception as e:
             print(f"Error calling Groq: {e}")
             return "I don't know"
+
+
+
+# model: this.model,
+#                     prompt: prompt,
+#                     stream: false,
+#                     options: {
+#                         temperature: 0.8,
+#                         top_p: 0.9,
+#                         top_k: 40,
+#                         num_predict: 2000,  // Increased to allow for longer responses
+#                         repeat_penalty: 1.2,
+#                         presence_penalty: 0.2,
+#                         frequency_penalty: 0.2,
+#                         mirostat: 2,        // Enable mirostat sampling
+#                         mirostat_tau: 5,
+#                         mirostat_eta: 0.1,
+#                         stop: ["4.", "---", "</s>"
